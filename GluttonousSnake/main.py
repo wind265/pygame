@@ -162,8 +162,8 @@ def main():
             pygame.draw.rect(screen, DARK, (s[0] * SIZE + LINE_WIDTH, s[1] * SIZE + LINE_WIDTH,
                                             SIZE - LINE_WIDTH * 2, SIZE - LINE_WIDTH * 2), 0)
 
-        print_text(screen, font1, 30, 7, f'速度: {score//100}')
-        print_text(screen, font1, 450, 7, f'得分: {score}')
+        print_text(screen, font1, 30, 7, '速度: {}'.format(score//100))
+        print_text(screen, font1, 450, 7, '得分: {}'.format(score))
 
         if game_over:
             if start:
